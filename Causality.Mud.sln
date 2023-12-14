@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{20812DD7-3EBD-4E1D-9D14-80B465C7461E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED5C2D94-B780-4236-9A26-D02EAD4C21E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Causality.Mud.Core", "src\shared\Causality.Mud.Core\Causality.Mud.Core.csproj", "{2A269205-90A7-4B8D-A938-97802E99042D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{5681A32B-F050-41C7-8377-992A499B0A8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{571E16E1-A053-483E-ABF8-D33ABAA731A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5681A32B-F050-41C7-8377-992A499B0A8C} = {20812DD7-3EBD-4E1D-9D14-80B465C7461E}
+		{2A269205-90A7-4B8D-A938-97802E99042D} = {5681A32B-F050-41C7-8377-992A499B0A8C}
+		{571E16E1-A053-483E-ABF8-D33ABAA731A6} = {20812DD7-3EBD-4E1D-9D14-80B465C7461E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A269205-90A7-4B8D-A938-97802E99042D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A269205-90A7-4B8D-A938-97802E99042D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A269205-90A7-4B8D-A938-97802E99042D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A269205-90A7-4B8D-A938-97802E99042D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
