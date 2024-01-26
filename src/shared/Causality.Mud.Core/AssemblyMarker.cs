@@ -1,6 +1,6 @@
 namespace Causality.Mud.Core;
 
-public interface IStorage
+public static class AssemblyMarker
 {
     
 }
