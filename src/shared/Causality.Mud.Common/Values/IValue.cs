@@ -1,7 +1,7 @@
 namespace Causality.Mud.Common.Values;
 
 public interface IValue:
-    IComparable, IFormattable, IConvertible, IComparable<int>, IEquatable<int>
+    IComparable, IFormattable, IConvertible, IComparable<int>, IEquatable<int>, ICloneable
 {
     string? Description { get; }
     
@@ -118,8 +118,15 @@ public interface IValue:
     }
     
     static IValue operator +(IValue left, IValue right) => new AddValue(left, right);
+    static IValue operator +(IValue left, int right) => new AddValue(left, new StaticValue(right));
     static IValue operator -(IValue left, IValue right) => new SubtractValue(left, right);
+    static IValue operator -(IValue left, int right) => new SubtractValue(left, new StaticValue(right));
     static IValue operator *(IValue left, IValue right) => new MultiplyValue(left, right);
+    static IValue operator *(IValue left, int right) => new MultiplyValue(left, new StaticValue(right));
     static IValue operator /(IValue left, IValue right) => new DivideValue(left, right);
+    static IValue operator /(IValue left, int right) => new DivideValue(left, new StaticValue(right));
     static IValue operator -(IValue term) => new NegateValue(term);
+
+    
+
 }

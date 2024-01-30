@@ -8,9 +8,8 @@ public class RawInputHandler:IStreamRequestHandler<RawInputRequest, RawInputResp
 {
     public IAsyncEnumerable<RawInputResponse> Handle(RawInputRequest request, CancellationToken cancellationToken)
     {
-        while (!cancellationToken.IsCancellationRequested)
-        {
-            
-        }
+
+            throw new NotImplementedException();
+        
     }
 }

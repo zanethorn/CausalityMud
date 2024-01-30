@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace Causality.Mud.Common;
 
 public abstract class LifecycleObject:StatefulObject, IHasLifecycle
@@ -14,6 +16,7 @@ public abstract class LifecycleObject:StatefulObject, IHasLifecycle
         {
             OnInitialize();
             IsInitialized = true;
+            Initialized?.Invoke(this);
         }
     }
     
@@ -29,12 +32,22 @@ public abstract class LifecycleObject:StatefulObject, IHasLifecycle
             IsDisposed = true;
             OnDispose();
             IsInitialized = false;
+            Disposed?.Invoke(this);
         }
+    }
+
+    public virtual object Clone()
+    {
+        var state = new StateBag();
+        GetState(state);
+        var clone = (IHasLifecycle)Activator.CreateInstance(GetType())!;
+        clone.SetState(state);
+        return clone;
     }
     
     protected virtual void OnInitialize()
     {
-        Initialized?.Invoke(this);
+        // does nothing
     }
     
     protected virtual void OnUpdate(UpdateContext context)
@@ -44,6 +57,8 @@ public abstract class LifecycleObject:StatefulObject, IHasLifecycle
     
     protected virtual void OnDispose()
     {
-        Disposed?.Invoke(this);
+        // does Nothing
     }
+    
+    
 }

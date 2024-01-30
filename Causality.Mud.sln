@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Causality.Mud.Server", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Causality.Mud.Common", "src\shared\Causality.Mud.Common\Causality.Mud.Common.csproj", "{12B21206-5D2D-4ED5-8D44-5FF8CBCACDF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Causality.Common.Tests", "tests\Causality.Common.Tests\Causality.Common.Tests.csproj", "{6A17F8EE-C01B-4729-8D8E-7E51603966CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,7 @@ Global
 		{571E16E1-A053-483E-ABF8-D33ABAA731A6} = {20812DD7-3EBD-4E1D-9D14-80B465C7461E}
 		{1557ED2B-7CDF-4618-809F-63A93F4F9FEE} = {571E16E1-A053-483E-ABF8-D33ABAA731A6}
 		{12B21206-5D2D-4ED5-8D44-5FF8CBCACDF1} = {5681A32B-F050-41C7-8377-992A499B0A8C}
+		{6A17F8EE-C01B-4729-8D8E-7E51603966CE} = {ED5C2D94-B780-4236-9A26-D02EAD4C21E6}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2A269205-90A7-4B8D-A938-97802E99042D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -39,5 +42,9 @@ Global
 		{12B21206-5D2D-4ED5-8D44-5FF8CBCACDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12B21206-5D2D-4ED5-8D44-5FF8CBCACDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12B21206-5D2D-4ED5-8D44-5FF8CBCACDF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A17F8EE-C01B-4729-8D8E-7E51603966CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A17F8EE-C01B-4729-8D8E-7E51603966CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A17F8EE-C01B-4729-8D8E-7E51603966CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A17F8EE-C01B-4729-8D8E-7E51603966CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

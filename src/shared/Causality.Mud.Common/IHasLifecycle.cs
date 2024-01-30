@@ -1,6 +1,6 @@
 namespace Causality.Mud.Common;
 
-public interface IHasLifecycle:IHasState, IDisposable
+public interface IHasLifecycle:IHasState, IDisposable, ICloneable
 {
 
     event Action<IHasLifecycle>? Initialized;
